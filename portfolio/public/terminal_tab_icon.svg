@@ -1,0 +1,24 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Terminal window background -->
+  <rect width="32" height="32" fill="#1a1a1a" rx="3"/>
+  
+  <!-- Terminal header bar -->
+  <rect width="32" height="8" fill="#2d2d2d" rx="3"/>
+  
+  <!-- Window controls -->
+  <circle cx="5" cy="4" r="1.5" fill="#ff5f56"/>
+  <circle cx="9" cy="4" r="1.5" fill="#ffbd2e"/>
+  <circle cx="13" cy="4" r="1.5" fill="#27c93f"/>
+  
+  <!-- Command prompt -->
+  <text x="3" y="18" font-family="monospace" font-size="8" fill="#00ff00">$</text>
+  
+  <!-- Cursor -->
+  <rect x="8" y="13" width="1" height="6" fill="#00ff00"/>
+  
+  <!-- Some command text -->
+  <text x="10" y="18" font-family="monospace" font-size="6" fill="#ffffff">ls</text>
+  
+  <!-- Terminal border -->
+  <rect width="32" height="32" fill="none" stroke="#333" stroke-width="1" rx="3"/>
+</svg>
