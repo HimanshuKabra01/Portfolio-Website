@@ -1,9 +1,12 @@
+import LiveBackground from "../components/LiveBackground";
 
 export default function Home() {
 
   return(
-    <h1 className="text-xl text-red-600">
-      Hello!
-    </h1>
+    <div>
+      <div className="font-primary">
+        <LiveBackground />
+      </div>
+    </div>
   );
 };
