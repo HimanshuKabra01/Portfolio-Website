@@ -2,14 +2,31 @@
 
 :root {
   --font-primary: 'Noto Serif', serif;
+  --font-secondary: 'Saira', serif;
+  --font-heading: 'Protest Revolution', serif;
 }
 
 @layer base {
   .font-primary {
     font-family: var(--font-primary);
   }
+
+  .font-secondary {
+    font-family: var(--font-secondary);
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
 }
 
 body {
   margin: 0;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  40% { opacity: 0.6; }
+  60% { opacity: 0.9; }
+  80% { opacity: 0.7; }
 }
