@@ -41,15 +41,15 @@ export default function LiveBackground() {
       vec2 uv = vUv;
 
       //wave pattern
-      float waveX = sin((uv.y + uTime * 0.05) * 10.0) * 0.02;
-      float waveY = cos((uv.x + uTime * 0.05) * 10.0) * 0.02;
+      float waveX = sin((uv.y + uTime * 0.2) * 10.0) * 0.02;
+      float waveY = cos((uv.x + uTime * 0.25) * 10.0) * 0.02;
       uv.x += waveX;
       uv.y += waveY;
 
       //color
       vec3 deepPurple = vec3(0.5, 0.1, 0.8);
       vec3 black = vec3(0.0);
-      float waveGlow = 0.5 + 0.5 * sin((uv.x + uv.y + uTime * 0.2) * 3.0);
+      float waveGlow = 0.5 + 0.5 * sin((uv.x + uv.y + uTime * 0.7) * 3.0);
       vec3 color = mix(black, deepPurple, waveGlow);
 
       //focus
