@@ -4,11 +4,11 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const sections = [
-    'Home',
-    'About Me',
-    'Projects',
-    'Experience',
-    'Contact Me'
+    {name: 'Home', id: 'home'},
+    {name: 'About Me', id: 'about-me'},
+    {name: 'Projects', id: 'projects'},
+    {name: 'Experience', id: 'experience'},
+    {name: 'Contact Me', id: 'contact'}
   ];
 
   useEffect(() => {
@@ -18,13 +18,6 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  const handleScroll = (id) => {
-    const element = document.getElementById(id.replace(/\s+/g, ''));
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <nav className="fixed top-0 w-full z-[100000]">
@@ -41,17 +34,17 @@ export default function Navbar() {
           }}
         >
           <div className="flex justify-center items-center h-full px-4">
-            {sections.map((section, index) => (
+            {sections.map((section) => (
               <div
-                key={section}
-                onClick={() => handleScroll(section)}
+                key={section.id}
+                onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})}
                 className="group relative text-white font-primary font-medium px-10 cursor-pointer transition-all duration-700 ease-out whitespace-nowrap flex items-center gap-2"
                 style={{
                 transform: isScrolled 
                   ? 'translateY(0)' 
                   : 'translateY(-100px)',
                 opacity: isScrolled ? 1 : 0,
-                transitionDelay: `${index * 100}ms`
+                transitionDelay: `${section.id * 100}ms`
                 }}
                 >
                 {/* Cyber Pulse Dot */}
@@ -62,7 +55,7 @@ export default function Navbar() {
 
                 {/* Gradient Text on Hover */}
                 <span className="relative z-10 group-hover:bg-gradient-to-r from-[#00f0ff] to-[#ff00d4] group-hover:bg-clip-text group-hover:text-transparent transition-colors duration-500">
-                {section}
+                {section.name}
                 </span>
 
                 {/* Gradient Underline */}
