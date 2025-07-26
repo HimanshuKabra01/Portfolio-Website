@@ -2,6 +2,7 @@ import LiveBackground from "../components/LiveBackground";
 import { motion } from 'framer-motion';
 import profilePic from '../assets/profile.jpg';
 import { Mouse, Send } from 'lucide-react';
+import Experience from "../components/Experience";
  
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.4 }}
             className="flex flex-col space-y-4 text-center md:text-left"
           >
-            <h1 className="font-primary text-[60px] bg-gradient-to-r from-[#00f0ff] to-[#ff00d4] bg-clip-text text-transparent leading-tight">
+            <h1 className="font-primary text-[60px] bg-clip-text text-transparent leading-tight">
               <p className="font-heading text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff] flex items-center gap-3">
                 Hi, I'm Himanshu Kabra
                 <a 
@@ -47,7 +48,7 @@ export default function Home() {
                 <li>Contributor @GSSoC'25 </li>
                 <li>Hackathon Finalist - 1 (HackHiest 2025)</li>
                 <li>Hackathon Participated - 3</li>
-                <li>Praciticing DSA..</li>
+                <li>Practicing DSA..</li>
               </ul>
             </p>
 
@@ -77,6 +78,10 @@ export default function Home() {
             <Mouse className="w-4 h-4 text-white" />
           </motion.div>
         </div>
+      </section>
+      <section id="experience"
+        className="relative w-full min-h-screen px-4 py-8 flex items-center">
+          <Experience />
       </section>
     </div>
   );
