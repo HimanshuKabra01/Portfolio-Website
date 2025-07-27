@@ -10,6 +10,9 @@ export default function Experience() {
 
   return(
     <div className="space-y-10 relative z-10 w-full px-4 md:px-8 max-w-screen overflow-x-hidden">
+      <div className="font-primary text-white underline text-[25px]">
+        EXPERIENCE
+      </div>
       {experienceList.map((experience, index) => {
         return(
           <motion.div 
@@ -26,7 +29,7 @@ export default function Experience() {
             className="relative w-full flex justify-start"
           >
             <div className="absolute w-4 h-4 rounded-full bg-[#00f0ff] border-4 border-background -left-7 top-1 animate-ping" />
-            <div className="w-full min-h-[140px] p-6 bg-white/5 rounded-lg flex flex-col justify-between">
+            <div className="w-full min-h-[140px] p-6 bg-white/5 flex flex-col justify-between">
               <div className="flex flex-wrap justify-between items-center gap-2">
                 <div className="flex items-center gap-3 flex-wrap">
                   <h3 className="text-[25px] font-heading font-semibold font-primary text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff]">{experience.title}</h3>

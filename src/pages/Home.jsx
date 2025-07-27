@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import profilePic from '../assets/profile.jpg';
 import { Mouse, Send } from 'lucide-react';
 import Experience from "../components/Experience";
+import AboutMe from "../components/AboutMe";
  
 export default function Home() {
   return (
@@ -78,6 +79,10 @@ export default function Home() {
             <Mouse className="w-4 h-4 text-white" />
           </motion.div>
         </div>
+      </section>
+      <section id="experience"
+        className="relative w-full min-h-screen px-4 py-8 flex items-center">
+          <AboutMe />
       </section>
       <section id="experience"
         className="relative w-full min-h-screen px-4 py-8 flex items-center">
