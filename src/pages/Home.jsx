@@ -80,7 +80,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <section id="experience"
+      <section id="about-me"
         className="relative w-full min-h-screen px-4 py-8 flex items-center">
           <AboutMe />
       </section>
