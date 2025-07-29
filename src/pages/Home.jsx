@@ -4,6 +4,7 @@ import profilePic from '../assets/profile.jpg';
 import { Mouse, Send } from 'lucide-react';
 import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
+import Project from "../components/Project";
  
 export default function Home() {
   return (
@@ -87,6 +88,10 @@ export default function Home() {
       <section id="experience"
         className="relative w-full min-h-screen px-4 py-8 flex items-center">
           <Experience />
+      </section>
+      <section id="project"
+        className="relative w-full min-h-screen px-4 py-8 flex items-center">
+          <Project />
       </section>
     </div>
   );
