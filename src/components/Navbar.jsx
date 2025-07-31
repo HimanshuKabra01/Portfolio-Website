@@ -5,7 +5,8 @@ export default function Navbar() {
 
   const sections = [
     {name: 'Portfolio', id: 'home'},
-    {name: 'Blogs', id: 'blogs'}
+    {name: 'Blogs', id: 'blogs'},
+    {name: 'Resume', id: 'resume'}
   ];
 
   useEffect(() => {
