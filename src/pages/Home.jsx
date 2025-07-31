@@ -5,37 +5,52 @@ import AboutMe from "../components/AboutMe";
 import Project from "../components/Project";
 import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
- 
+
 export default function Home() {
   return (
-    <div className="w-full flex flex-col relative">
+    <div className="w-full flex flex-col relative min-h-screen overflow-x-hidden">
       
       {/* Fullscreen Live Background */}
-      <div className="fixed top-0 left-0 w-screen h-screen -z-10 overflow-hidden">
+      <div className="fixed inset-0 -z-10 w-full h-full">
         <LiveBackground />
       </div>
 
-     <section
+      {/* Hero Section */}
+      <section
         id="home"
-        className="relative w-full min-h-screen px-4 py-8 flex items-center justify-center">
-          <Hero />
+        className="relative w-full min-h-screen px-4 sm:px-8 md:px-12 py-12 flex items-center justify-center text-center">
+        <Hero />
       </section>
-      <section id="about-me"
-        className="relative w-full min-h-screen px-4 py-8 flex items-center">
-          <AboutMe />
+
+      {/* About Me Section */}
+      <section 
+        id="about-me"
+        className="relative w-full min-h-[80vh] px-4 sm:px-8 md:px-12 py-12 flex flex-col items-center text-center md:text-left">
+        <AboutMe />
       </section>
-      <section id="project"
-        className="relative w-full min-h-screen px-4 py-8 flex items-center">
-          <Project />
+
+      {/* Projects Section */}
+      <section 
+        id="project"
+        className="relative w-full min-h-[80vh] px-4 sm:px-8 md:px-12 py-12 flex flex-col items-center">
+        <Project />
       </section>
-      <section id="experience"
-        className="relative w-full min-h-screen px-4 py-8 flex items-center">
-          <Experience />
+
+      {/* Experience Section */}
+      <section 
+        id="experience"
+        className="relative w-full min-h-[80vh] px-4 sm:px-8 md:px-12 py-12 flex flex-col items-center">
+        <Experience />
       </section>
-      <section id="contact-me"
-        className="relative w-full min-h-screen px-4 py-8 flex items-center">
-          <ContactMe />
+
+      {/* Contact Section */}
+      <section 
+        id="contact-me"
+        className="relative w-full min-h-[70vh] px-4 sm:px-8 md:px-12 py-12 flex flex-col items-center">
+        <ContactMe />
       </section>
+
+      {/* Footer */}
       <footer>
         <Footer />
       </footer>
