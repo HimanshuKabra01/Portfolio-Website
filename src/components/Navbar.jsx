@@ -48,7 +48,7 @@ export default function Navbar() {
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
           className="text-white text-lg font-semibold flex items-center gap-2"
         >
-          {isMenuOpen ? <>Close <X size={22} /></> : <><Menu size={22} /></>}
+          {isMenuOpen ? <><X size={22} /></> : <><Menu size={22} /></>}
         </button>
         <div className="w-6"></div>
       </div>
@@ -120,7 +120,7 @@ export default function Navbar() {
                 <Link
                   to={page.to}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-white text-lg font-medium hover:text-cyan-400 transition"
+                  className="text-white text-lg font-primary hover:text-cyan-400 transition"
                 >
                   {page.name}
                 </Link>

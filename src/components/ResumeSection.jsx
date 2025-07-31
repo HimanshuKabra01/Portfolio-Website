@@ -19,13 +19,14 @@ export default function ResumeSection() {
             My Resume
           </h1>
 
-          {/* Responsive A4 Aspect Container */}
+          {/* Responsive Container */}
           <div className="flex justify-center mb-6">
-            <div className="bg-white border border-white/20 shadow-lg w-full max-w-[800px] aspect-[1/1.414]">
+            <div className="bg-white border border-white/20 shadow-lg w-full max-w-[800px]">
               <iframe
                 src="/resumev-2.pdf#view=FitH"
                 title="Resume"
-                className="w-full h-full"
+                className="w-full min-h-[500px] md:min-h-[1000px] rounded"
+                style={{ border: "none" }}
               />
             </div>
           </div>
@@ -41,11 +42,6 @@ export default function ResumeSection() {
             <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-white" />
             <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-white" />
           </a>
-
-          <span className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-white" />
-          <span className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-white" />
-          <span className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-white" />
-          <span className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-white" />
         </div>
       </motion.div>
     </div>
