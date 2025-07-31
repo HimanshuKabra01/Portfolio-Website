@@ -8,7 +8,7 @@ export default function Project() {
   ];
   return(
     <div>
-      <div className="font-primary mb-4 text-white underline text-[25px]">
+      <div className="font-secondary mb-4 text-white underline text-[25px]">
         PROJECTS
       </div>
       {projectDetails.map((project, idx) => {
