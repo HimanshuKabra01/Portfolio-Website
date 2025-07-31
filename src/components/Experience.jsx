@@ -10,7 +10,7 @@ export default function Experience() {
 
   return(
     <div className="space-y-10 relative z-10 w-full px-4 md:px-8 max-w-screen overflow-x-hidden pointer-events-none">
-      <div className="font-primary text-white underline text-[25px]">
+      <div className="font-secondary text-white underline text-[25px]">
         EXPERIENCE
       </div>
       {experienceList.map((experience, index) => {

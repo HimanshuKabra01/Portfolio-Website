@@ -4,11 +4,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const sections = [
-    {name: 'Home', id: 'home'},
-    {name: 'About Me', id: 'about-me'},
-    {name: 'Projects', id: 'projects'},
-    {name: 'Experience', id: 'experience'},
-    {name: 'Contact Me', id: 'contact'}
+    {name: 'Portfolio', id: 'home'},
+    {name: 'Blogs', id: 'blogs'}
   ];
 
   useEffect(() => {

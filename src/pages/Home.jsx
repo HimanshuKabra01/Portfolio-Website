@@ -5,6 +5,7 @@ import { Mouse, Send } from 'lucide-react';
 import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
 import Project from "../components/Project";
+import ContactMe from "../components/ContactMe";
  
 export default function Home() {
   return (
@@ -85,13 +86,17 @@ export default function Home() {
         className="relative w-full min-h-screen px-4 py-8 flex items-center">
           <AboutMe />
       </section>
+      <section id="project"
+        className="relative w-full min-h-screen px-4 py-8 flex items-center">
+          <Project />
+      </section>
       <section id="experience"
         className="relative w-full min-h-screen px-4 py-8 flex items-center">
           <Experience />
       </section>
-      <section id="project"
+      <section id="contact-me"
         className="relative w-full min-h-screen px-4 py-8 flex items-center">
-          <Project />
+          <ContactMe />
       </section>
     </div>
   );
