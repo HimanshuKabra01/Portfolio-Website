@@ -16,7 +16,7 @@ export default function AboutMe() {
   const techStack = ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.js", "C++", "C", "Python", "Google Cloud Platform"];
 
   return (
-    <div className="relative z-10 w-full px-4 md:px-8 max-w-screen overflow-x-hidden pointer-events-none">
+    <div className="relative z-10 w-full px-4 md:px-8 max-w-screen overflow-x-hidden">
       {/* Two blocks side by side */}
       <div className="flex justify-center items-stretch gap-6 mb-12">
         {/* Left Block */}
@@ -25,7 +25,7 @@ export default function AboutMe() {
           initial={{ x: -100, opacity: 0 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 120, damping: 15 }}
-          className="relative w-full md:w-1/2 p-6 bg-white/5 rounded-lg flex flex-col justify-between min-h-[200px]"
+          className="relative w-full md:w-1/2 p-6 bg-white/5 rounded-lg flex flex-col justify-between min-h-[200px] pointer-events-none"
         >
           <h2 className="text-[25px] font-heading font-bold mb-4 text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff]">About Me</h2>
           <div className="text-[#ff00d4] font-heading text-[22px]">
