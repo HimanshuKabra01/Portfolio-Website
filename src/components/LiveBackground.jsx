@@ -31,34 +31,36 @@ export default function LiveBackground() {
     }`;
 
     const fragmentShader = `#version 300 es
-    precision highp float;
-    uniform float uTime;
-    in vec2 vUv;
-    out vec4 fragColor;
+      precision highp float;
+      uniform float uTime;
+      in vec2 vUv;
+      out vec4 fragColor;
 
-    // Wavy Distortion
-    void main() {
-      vec2 uv = vUv;
+      void main() {
+        vec2 uv = vUv;
 
-      //wave pattern
-      float waveX = sin((uv.y + uTime * 0.2) * 10.0) * 0.02;
-      float waveY = cos((uv.x + uTime * 0.25) * 10.0) * 0.02;
-      uv.x += waveX;
-      uv.y += waveY;
+        // Gentle wave distortion
+        float waveX = sin((uv.y + uTime * 0.15) * 8.0) * 0.01;
+        float waveY = cos((uv.x + uTime * 0.2) * 8.0) * 0.01;
+        uv.x += waveX;
+        uv.y += waveY;
 
-      // color
-      vec3 greyishBlack = vec3(0.25, 0.25, 0.25); // lighter grey
-      vec3 black = vec3(0.0);
-      float waveGlow = 0.5 + 0.5 * sin((uv.x + uv.y + uTime * 0.7) * 3.0);
-      vec3 color = mix(black, greyishBlack, waveGlow);
-      
-      //focus
-      float dist = distance(uv, vec2(0.5));
-      float fade = smoothstep(0.8, 0.3, dist);
-      color *= fade;
+        // Colors
+        vec3 jetBlack = vec3(0.0);
+        vec3 grayTint = vec3(0.2, 0.2, 0.2); // soft gray overlay
 
-      fragColor = vec4(color, 1.0);
-    }`;
+        // Soft glowing wave effect
+        float waveGlow = 0.5 + 0.5 * sin((uv.x + uv.y + uTime * 0.5) * 2.5);
+        vec3 color = mix(jetBlack, grayTint, waveGlow * 0.4); // only 40% tint
+
+        // Vignette (focus in center)
+        float dist = distance(uv, vec2(0.5));
+        float fade = smoothstep(0.85, 0.3, dist);
+        color *= fade;
+
+        fragColor = vec4(color, 1.0);
+      }`;
+
 
     const program = new Program(gl, {
       vertex: vertexShader,
