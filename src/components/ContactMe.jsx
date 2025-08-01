@@ -18,10 +18,10 @@ export default function ContactMe() {
           <h1 className="text-[25px] font-heading text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff] mb-4">
             Contact Me
           </h1>
-          <div className="text-[#ff00d4] font-heading text-[22px] mb-6">
+          <div className="text-[#00FF00] font-heading text-[22px] mb-6">
             My inbox is always open — whether it’s for a project, a question, or a good meme.
           </div>
-          <div className="w-full flex justify-center gap-6 text-[#ff00d4]">
+          <div className="w-full flex justify-center gap-6 text-[#00FF00]">
             <a href="mailto:kabrahimanshu123@gmail.com" target="_blank" rel="noopener noreffer"><Mail /></a>
             <a href="https://github.com/HimanshuKabra01" target="_blank" rel="noopener noreffer"><Github /></a>
             <a href="https://linkedin.com/in/himanshu-kabra28" target="_blank" rel="noopener noreffer"><Linkedin /></a>

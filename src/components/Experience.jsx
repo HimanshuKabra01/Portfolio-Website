@@ -44,7 +44,7 @@ export default function Experience() {
                 {experience.duration}
               </span>
             </div>
-            <div className="text-[#ff00d4] font-heading text-base sm:text-[20px] mt-2">
+            <div className="text-[#00FF00] font-heading text-base sm:text-[20px] mt-2">
               <div className="pb-1 sm:pb-2">{experience.company}</div>
               <div>{experience.description}</div>
             </div>

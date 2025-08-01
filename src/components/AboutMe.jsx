@@ -29,7 +29,7 @@ export default function AboutMe() {
           <h2 className="text-[20px] md:text-[25px] font-heading font-bold mb-4 text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff]">
             About Me
           </h2>
-          <div className="text-[#ff00d4] font-heading text-[18px] md:text-[22px] leading-relaxed">
+          <div className="text-[#00FF00] font-heading text-[18px] md:text-[22px] leading-relaxed">
             I am a second year undergrad pursuing Electronics and Communications Engineering at Maharaja Surajmal Institute of Technology, New Delhi. I have a strong passion for technology and enjoy designing, building, and enhancing innovative solutions to solve real-world problems. My second hobby is to play games and you may find me streaming on YouTube/Twitch.
           </div>
           {/* Corner Borders */}
@@ -55,7 +55,7 @@ export default function AboutMe() {
               {techStack.map((tech, idx) => (
                 <div
                   key={idx}
-                  className="bg-purple-600/20 text-[#ff00d4] font-mono text-[16px] md:text-[22px] px-3 py-1 md:px-4 md:py-2 rounded-md"
+                  className="bg-purple-600/20 text-[#00FF00] font-mono text-[16px] md:text-[22px] px-3 py-1 md:px-4 md:py-2 rounded-md"
                 >
                   {tech}
                 </div>
@@ -86,7 +86,7 @@ export default function AboutMe() {
               >
                 <div className="w-full p-4 md:p-6 bg-white/10 text-center backdrop-blur-md border border-white/20 shadow-lg hover:shadow-[0_0_20px_rgba(0,255,255,0.5)] transition-all duration-300">
                   <h4 className="text-lg md:text-xl font-secondary font-bold text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff]">{event.year}</h4>
-                  <p className="text-sm md:text-base font-secondary text-[#ff00d4] mt-1">{event.text}</p>
+                  <p className="text-sm md:text-base font-secondary text-[#00FF00] mt-1">{event.text}</p>
                 </div>
               </div>
             ))}
