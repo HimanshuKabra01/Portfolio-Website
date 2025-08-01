@@ -43,7 +43,7 @@ export default function Project() {
               </h2>
 
               {/* Project Description */}
-              <div className="text-[#ff00d4] font-heading text-lg md:text-xl mb-4">
+              <div className="text-[#00FF00] font-heading text-lg md:text-xl mb-4">
                 {project.description}
               </div>
 
