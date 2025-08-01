@@ -55,7 +55,7 @@ export default function AboutMe() {
               {techStack.map((tech, idx) => (
                 <div
                   key={idx}
-                  className="bg-purple-600/20 text-[#00FF00] font-mono text-[16px] md:text-[22px] px-3 py-1 md:px-4 md:py-2 rounded-md"
+                  className="bg-gray-600/20 text-[#00FF00] font-mono text-[16px] md:text-[22px] px-3 py-1 md:px-4 md:py-2 rounded-md"
                 >
                   {tech}
                 </div>

@@ -46,12 +46,12 @@ export default function LiveBackground() {
       uv.x += waveX;
       uv.y += waveY;
 
-      //color
-      vec3 deepPurple = vec3(0.5, 0.1, 0.8);
+      // color
+      vec3 greyishBlack = vec3(0.25, 0.25, 0.25); // lighter grey
       vec3 black = vec3(0.0);
       float waveGlow = 0.5 + 0.5 * sin((uv.x + uv.y + uTime * 0.7) * 3.0);
-      vec3 color = mix(black, deepPurple, waveGlow);
-
+      vec3 color = mix(black, greyishBlack, waveGlow);
+      
       //focus
       float dist = distance(uv, vec2(0.5));
       float fade = smoothstep(0.8, 0.3, dist);
