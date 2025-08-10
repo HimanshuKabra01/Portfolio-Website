@@ -48,7 +48,7 @@ export default function Hero() {
           Open‑Source Enthusiast & Software Developer <br /> Driven by a passion for AI/ML
         </div>
         <ul className="font-heading text-[#00FF00] text-[16px] sm:text-[20px] space-y-1">
-          <li>Contributor @GSSoC'25</li>
+          <li>Project Admin @GSSoC'25</li>
           <li>Hackathon Finalist - 1 (HackHiest 2025)</li>
           <li>Hackathon Participated - 3</li>
           <li>Practicing DSA..</li>
