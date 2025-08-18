@@ -23,7 +23,7 @@ export default function ResumeSection() {
           <div className="flex justify-center mb-6">
             <div className="bg-white border border-white/20 shadow-lg w-full max-w-[800px]">
               <iframe
-                src="/resumeee.pdf#view=FitH"
+                src="/resume-updated.pdf#view=FitH"
                 title="Resume"
                 className="w-full min-h-[500px] md:min-h-[1000px]"
                 style={{ border: "none" }}
@@ -32,7 +32,7 @@ export default function ResumeSection() {
           </div>
 
           <a
-            href="/resumeee.pdf"
+            href="/resume-updated.pdf"
             download
             className="relative inline-block px-6 py-3 text-lg text-white bg-white/20 hover:bg-white/40 shadow-md transition-all"
           >
