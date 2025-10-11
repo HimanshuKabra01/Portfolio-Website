@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function ContactMe() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
+    <div className="w-screen h-screen flex justify-center">
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
@@ -13,6 +13,7 @@ export default function ContactMe() {
           stiffness: 120,
           damping: 15
         }}
+        className="flex flex-col md:flex-row gap-5 items-center"
       >
         <div className="relative font-heading bg-white/5 p-6 max-w-md text-center shadow-lg rounded-lg">
           <h1 className="text-[25px] font-heading text-[#00f0ff] drop-shadow-[0_0_12px_#00f0ff] mb-4">
@@ -37,6 +38,12 @@ export default function ContactMe() {
           <span className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-white" />
           <span className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-white" />
           <span className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-white" />
+        </div>
+        <div>
+          <img src="https://codeforces-readme-stats.vercel.app/api/card?username=celestial.rage&theme=ocean_dark&disable_animations=false&show_icons=true&force_username=true"/>
+        </div>
+        <div>
+          <img src="https://leetcard.jacoblin.cool/HimanshuKabra06?theme=dark&font=Habibi&ext=heatmap"/>
         </div>
       </motion.div>
     </div>

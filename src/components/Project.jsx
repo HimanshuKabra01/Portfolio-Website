@@ -7,6 +7,11 @@ export default function Project() {
       name: "Discord Clone", 
       description: "This is my project for showcasing my HTML and CSS skills", 
       github: "https://github.com/HimanshuKabra01/Discord-Clone" 
+    }, 
+    {
+      name: "AnemoScan",
+      description: "A HealthTech app. Currently working on this",
+      github: "https://github.com/HimanshuKabra01/AnemoScan"
     }
   ];
 

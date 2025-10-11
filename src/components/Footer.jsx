@@ -10,6 +10,7 @@ export default function Footer() {
       <div className="text-center md:text-left">
         &copy; 2025 Himanshu Kabra
       </div>
+      <div className="md:mt-1">Last updated : October 11, 2025</div>
       <button
         className="cursor-pointer flex items-center gap-2 px-3 py-1 transition"
         onClick={handleScroll}
