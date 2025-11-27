@@ -4,9 +4,9 @@ import { Github } from 'lucide-react';
 export default function Project() {
   const projectDetails = [
     { 
-      name: "Discord Clone", 
-      description: "This is my project for showcasing my HTML and CSS skills", 
-      github: "https://github.com/HimanshuKabra01/Discord-Clone" 
+      name: "InsuraAI", 
+      description: "Working on this with my friend", 
+      github: "https://github.com/HimanshuKabra01/InsuraAi" 
     }, 
     {
       name: "AnemoScan",
