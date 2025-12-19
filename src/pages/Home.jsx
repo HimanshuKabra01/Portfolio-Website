@@ -1,4 +1,3 @@
-import LiveBackground from "../components/LiveBackground";
 import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
@@ -10,10 +9,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col relative min-h-screen overflow-x-hidden">
       
-      {/* Fullscreen Live Background */}
-      <div className="fixed inset-0 -z-10 w-full h-full">
-        <LiveBackground />
-      </div>
+      <div className="absolute inset-0 -z-10 w-full h-full dotted-background"></div>
 
       {/* Hero Section */}
       <section

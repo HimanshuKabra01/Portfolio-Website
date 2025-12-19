@@ -10,6 +10,7 @@ export default function AboutMe() {
     { year: "06'2025", text: "Contributor - SSoC S4" },
     { year: "07'2025", text: "Hackathon Participant - BAH"},
     { year: "07'2025", text: "PA - GSSoC" },
+    { year: "12'2025", text: "First Internship"},
     { year: "08'2028", text: "Graduation Completed" },
   ];
 

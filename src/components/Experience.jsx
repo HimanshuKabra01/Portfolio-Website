@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Experience() {
   const experienceList = [
+    {title: "Jr. Software Developer Intern", company: "SuPrazo Technologies", description: "Buliding scalable applications",skills: "Web Developement, Algorithms", duration: "Dec 2025 - Present"},
     {title: "Project Admin", company: "GirlScript Summer of Code", description: "Contributing to amazing open source projects",skills:"Open Source Development, Project Administrator", duration: "July 2025 - Sep 2025"},
     {title: "Open Source Contributor", company: "Social Summer of Code", description: "Contributing to amazing open source projects",skills:"Open Source Development, Frontend Development",duration: "June 2025 - Aug 2025"},
     {title: "Trainee", company: "The Infopreneurs Club", description: "Learnt importance of soft skills, planning and how to implement them in our daily life",skills:"Business Planning, Soft Skills, Passive Income",duration: "Jan 2025 - Feb 2025"},

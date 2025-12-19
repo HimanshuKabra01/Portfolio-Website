@@ -1,4 +1,3 @@
-import LiveBackground from "../components/LiveBackground";
 import { motion } from 'framer-motion';
 import { Hourglass } from 'lucide-react';
 import Footer from "../components/Footer";
@@ -6,10 +5,8 @@ import Footer from "../components/Footer";
 export default function CommingSoon() {
   return (
     <div className="w-full flex flex-col relative">  
-      {/* Fullscreen Live Background */}
-      <div className="fixed top-0 left-0 w-screen h-screen -z-10 overflow-hidden">
-        <LiveBackground />
-      </div>
+
+      <div className="absolute inset-0 -z-10 w-full h-full dotted-background"></div>
 
       <section
         id="coming-soon"
