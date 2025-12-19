@@ -23,7 +23,7 @@ export default function ResumeSection() {
           <div className="flex justify-center mb-6">
             <div className="bg-white border border-white/20 shadow-lg w-full max-w-[800px]">
               <iframe
-                src="/resume-updated.pdf#view=FitH"
+                src="/Reumee.pdf#view=FitH"
                 title="Resume"
                 className="w-full min-h-[500px] md:min-h-[1000px]"
                 style={{ border: "none" }}
