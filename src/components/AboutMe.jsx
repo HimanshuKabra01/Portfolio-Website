@@ -8,13 +8,16 @@ export default function AboutMe() {
     { year: "03'2025", text: `Hackathon Finalist - HackHeist` },
     { year: "04'2025", text: "Hackathon Participant - CodeNakshatra" },
     { year: "06'2025", text: "Contributor - SSoC S4" },
-    { year: "07'2025", text: "Hackathon Participant - BAH"},
+    { year: "07'2025", text: "Hackathon Participant - BAH 2025"},
     { year: "07'2025", text: "PA - GSSoC" },
     { year: "12'2025", text: "First Internship"},
+    { year: "02'2026", text: "Joined Oppia"},
+    { year: "05'2026", text: "Internship Completed"},
+    { year: "07'2026", text: "Hackathon Participant - BAH 2026"},
     { year: "08'2028", text: "Graduation Completed" },
   ];
 
-  const techStack = ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.js", "C++", "C", "Python", "Google Cloud Platform"];
+  const techStack = ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.js", "React Native", "C++", "C", "Python", "Google Cloud Platform", "SQL", "DBMS", "Node.js", "Express.js", "FastAPI", "Flask", "CI/CD", "OOPS", "REST APIs"];
 
   return (
     <div className="relative z-10 w-full px-4 md:px-8 max-w-screen overflow-x-hidden">

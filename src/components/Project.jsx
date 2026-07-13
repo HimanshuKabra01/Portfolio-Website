@@ -3,6 +3,11 @@ import { Github } from 'lucide-react';
 
 export default function Project() {
   const projectDetails = [
+    {
+      name: "SkyShield",
+      description: "SkyShield is an AI-powered air quality monitoring platform designed for India. It fuses real-time data from ISRO satellites (MOSDAC), CPCB ground sensors, and Open-Meteo to provide hyper-local, personalized air risk intelligence and predictive smog forecasting.",
+      github: "https://github.com/HimanshuKabra01/SkyShield"
+    },
     { 
       name: "InsuraAI", 
       description: "Working on this with my friend", 

@@ -32,7 +32,7 @@ export default function ResumeSection() {
           </div>
 
           <a
-            href="/resume-updated.pdf"
+            href="/Reumee.pdf"
             download
             className="relative inline-block px-6 py-3 text-lg text-white bg-white/20 hover:bg-white/40 shadow-md transition-all"
           >
